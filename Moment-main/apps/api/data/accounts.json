@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "user_id": "demo-user-001",
+      "username": "demo",
+      "pin": "1234",
+      "created_at_ms": 1771748862512,
+      "updated_at_ms": 1771748862512
+    },
+    {
+      "user_id": "usr_ebe21a38",
+      "username": "user_1a38",
+      "pin": "1234",
+      "created_at_ms": 1771755314594,
+      "updated_at_ms": 1771755314594
+    }
+  ],
+  "wallets": [
+    {
+      "user_id": "demo-user-001",
+      "balance": 100,
+      "updated_at_ms": 1771748862512
+    },
+    {
+      "user_id": "usr_ebe21a38",
+      "balance": 109.76,
+      "updated_at_ms": 1771755561799
+    }
+  ],
+  "picks": [
+    {
+      "bet_id": "4037c29d-a878-4459-9ceb-1c5fd847c1f3",
+      "user_id": "usr_ebe21a38",
+      "market_id": "mkt_stocks_GOOGL_5",
+      "selection": "HIGHER",
+      "stake": 10,
+      "fee": 0.12,
+      "effective_stake": 9.88,
+      "accepted_price": 0.5,
+      "potential_payout": 19.76,
+      "status": "settled_won",
+      "created_at_ms": 1771755557135,
+      "payout": 19.76,
+      "settled_at_ms": 1771755561799
+    }
+  ]
+}

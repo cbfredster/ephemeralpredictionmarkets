@@ -1,0 +1,6 @@
+opencv-python
+numpy
+requests
+pydantic>=2,<3
+easyocr
+pytesseract

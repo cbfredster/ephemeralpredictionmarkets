@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Moment",
+    "slug": "moment-mvp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Moment uses Face ID to verify your identity before moving funds."
+      },
+      "bundleIdentifier": "com.anonymous.moment-mvp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#070a10"
+      }
+    },
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.moment",
+          "enableGooglePay": false
+        }
+      ]
+    ]
+  }
+}

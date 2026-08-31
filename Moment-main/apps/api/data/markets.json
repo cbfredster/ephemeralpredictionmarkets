@@ -1,0 +1,329 @@
+{
+  "markets": [
+    {
+      "market_id": "mkt_stocks_NVDA_1",
+      "sport": "Stocks",
+      "session_id": "stocks-session-2026-02-22",
+      "market_type": "binary_higher_lower",
+      "question": "Will NVDA move DOWN another 1.77% from $87.65 by the open settlement window?",
+      "context": {
+        "scanner_event": "event_created",
+        "scanner_event_type": "preopen_volatility",
+        "scanner_event_state": "active",
+        "original_close_at_ms": 1744032660000,
+        "close_time_shifted_to_now": true,
+        "source_event_id": "1",
+        "source_signal_type": "create_bet",
+        "scanner_session_id": "stocks-session-2026-02-22",
+        "scanner_confidence": 1,
+        "scanner_cooldown_key": "stocks:NVDA:mkt_stocks_NVDA_1",
+        "market_key": "preopen_volatility",
+        "symbol": "NVDA",
+        "close_at_ms": 1771755609883,
+        "underlying_last_price": 87.65,
+        "underlying_start_price": 87.65,
+        "underlying_price_at_ms": 1744032300000,
+        "close_reason": "settlement_window_elapsed"
+      },
+      "open_at_ms": 1744032300000,
+      "settlement_key": "stocks_stock_up_down_window",
+      "starter_event_id": "1",
+      "close_control": {
+        "mode": "backend_signal",
+        "closer_key": "mock_closer_v1"
+      },
+      "market_making": {
+        "model": "binary_amm",
+        "initial_probability_yes": 0.5,
+        "virtual_liquidity": 120,
+        "fee_bps": 120
+      },
+      "status": "settled",
+      "amm_state": {
+        "yes_pool": 60,
+        "no_pool": 60,
+        "fee_bps": 120,
+        "virtual_liquidity": 120,
+        "total_fees_collected": 0,
+        "total_volume": 0,
+        "trade_count": 0
+      },
+      "prices": {
+        "yes": 0.5,
+        "no": 0.5
+      },
+      "timestamps": {
+        "open_at_ms": 1744032300000,
+        "updated_at_ms": 1771755561778,
+        "closed_at_ms": 1771755561775,
+        "settled_at_ms": 1771755561778
+      },
+      "safety": {
+        "max_open_duration_ms": 0,
+        "expires_at_ms": 0,
+        "timeout_triggered": false
+      },
+      "settlement_outcome": "HIGHER"
+    },
+    {
+      "market_id": "mkt_stocks_AAPL_2",
+      "sport": "Stocks",
+      "session_id": "stocks-session-2026-02-22",
+      "market_type": "binary_higher_lower",
+      "question": "Will AAPL move DOWN another 1.25% from $178.99 by the open settlement window?",
+      "context": {
+        "scanner_event": "event_created",
+        "scanner_event_type": "preopen_volatility",
+        "scanner_event_state": "active",
+        "original_close_at_ms": 1744032660000,
+        "close_time_shifted_to_now": true,
+        "source_event_id": "2",
+        "source_signal_type": "create_bet",
+        "scanner_session_id": "stocks-session-2026-02-22",
+        "scanner_confidence": 1,
+        "scanner_cooldown_key": "stocks:AAPL:mkt_stocks_AAPL_2",
+        "market_key": "preopen_volatility",
+        "symbol": "AAPL",
+        "close_at_ms": 1771755610330,
+        "underlying_last_price": 178.99,
+        "underlying_start_price": 178.99,
+        "underlying_price_at_ms": 1744032300000,
+        "close_reason": "settlement_window_elapsed"
+      },
+      "open_at_ms": 1744032300000,
+      "settlement_key": "stocks_stock_up_down_window",
+      "starter_event_id": "2",
+      "close_control": {
+        "mode": "backend_signal",
+        "closer_key": "mock_closer_v1"
+      },
+      "market_making": {
+        "model": "binary_amm",
+        "initial_probability_yes": 0.5,
+        "virtual_liquidity": 120,
+        "fee_bps": 120
+      },
+      "status": "settled",
+      "amm_state": {
+        "yes_pool": 60,
+        "no_pool": 60,
+        "fee_bps": 120,
+        "virtual_liquidity": 120,
+        "total_fees_collected": 0,
+        "total_volume": 0,
+        "trade_count": 0
+      },
+      "prices": {
+        "yes": 0.5,
+        "no": 0.5
+      },
+      "timestamps": {
+        "open_at_ms": 1744032300000,
+        "updated_at_ms": 1771755561784,
+        "closed_at_ms": 1771755561783,
+        "settled_at_ms": 1771755561784
+      },
+      "safety": {
+        "max_open_duration_ms": 0,
+        "expires_at_ms": 0,
+        "timeout_triggered": false
+      },
+      "settlement_outcome": "HIGHER"
+    },
+    {
+      "market_id": "mkt_stocks_AMZN_3",
+      "sport": "Stocks",
+      "session_id": "stocks-session-2026-02-22",
+      "market_type": "binary_higher_lower",
+      "question": "Will AMZN move DOWN another 0.95% from $164.49 by the open settlement window?",
+      "context": {
+        "scanner_event": "event_created",
+        "scanner_event_type": "preopen_volatility",
+        "scanner_event_state": "active",
+        "original_close_at_ms": 1744032660000,
+        "close_time_shifted_to_now": true,
+        "source_event_id": "3",
+        "source_signal_type": "create_bet",
+        "scanner_session_id": "stocks-session-2026-02-22",
+        "scanner_confidence": 1,
+        "scanner_cooldown_key": "stocks:AMZN:mkt_stocks_AMZN_3",
+        "market_key": "preopen_volatility",
+        "symbol": "AMZN",
+        "close_at_ms": 1771755610647,
+        "underlying_last_price": 164.49,
+        "underlying_start_price": 164.49,
+        "underlying_price_at_ms": 1744032300000,
+        "close_reason": "settlement_window_elapsed"
+      },
+      "open_at_ms": 1744032300000,
+      "settlement_key": "stocks_stock_up_down_window",
+      "starter_event_id": "3",
+      "close_control": {
+        "mode": "backend_signal",
+        "closer_key": "mock_closer_v1"
+      },
+      "market_making": {
+        "model": "binary_amm",
+        "initial_probability_yes": 0.5,
+        "virtual_liquidity": 120,
+        "fee_bps": 120
+      },
+      "status": "settled",
+      "amm_state": {
+        "yes_pool": 60,
+        "no_pool": 60,
+        "fee_bps": 120,
+        "virtual_liquidity": 120,
+        "total_fees_collected": 0,
+        "total_volume": 0,
+        "trade_count": 0
+      },
+      "prices": {
+        "yes": 0.5,
+        "no": 0.5
+      },
+      "timestamps": {
+        "open_at_ms": 1744032300000,
+        "updated_at_ms": 1771755561790,
+        "closed_at_ms": 1771755561789,
+        "settled_at_ms": 1771755561790
+      },
+      "safety": {
+        "max_open_duration_ms": 0,
+        "expires_at_ms": 0,
+        "timeout_triggered": false
+      },
+      "settlement_outcome": "HIGHER"
+    },
+    {
+      "market_id": "mkt_stocks_MSFT_4",
+      "sport": "Stocks",
+      "session_id": "stocks-session-2026-02-22",
+      "market_type": "binary_higher_lower",
+      "question": "Will MSFT move DOWN another 0.75% from $349.01 by the open settlement window?",
+      "context": {
+        "scanner_event": "event_created",
+        "scanner_event_type": "preopen_volatility",
+        "scanner_event_state": "active",
+        "original_close_at_ms": 1744032660000,
+        "close_time_shifted_to_now": true,
+        "source_event_id": "4",
+        "source_signal_type": "create_bet",
+        "scanner_session_id": "stocks-session-2026-02-22",
+        "scanner_confidence": 1,
+        "scanner_cooldown_key": "stocks:MSFT:mkt_stocks_MSFT_4",
+        "market_key": "preopen_volatility",
+        "symbol": "MSFT",
+        "close_at_ms": 1771755611032,
+        "underlying_last_price": 349.01,
+        "underlying_start_price": 349.01,
+        "underlying_price_at_ms": 1744032300000,
+        "close_reason": "settlement_window_elapsed"
+      },
+      "open_at_ms": 1744032300000,
+      "settlement_key": "stocks_stock_up_down_window",
+      "starter_event_id": "4",
+      "close_control": {
+        "mode": "backend_signal",
+        "closer_key": "mock_closer_v1"
+      },
+      "market_making": {
+        "model": "binary_amm",
+        "initial_probability_yes": 0.5,
+        "virtual_liquidity": 120,
+        "fee_bps": 120
+      },
+      "status": "settled",
+      "amm_state": {
+        "yes_pool": 60,
+        "no_pool": 60,
+        "fee_bps": 120,
+        "virtual_liquidity": 120,
+        "total_fees_collected": 0,
+        "total_volume": 0,
+        "trade_count": 0
+      },
+      "prices": {
+        "yes": 0.5,
+        "no": 0.5
+      },
+      "timestamps": {
+        "open_at_ms": 1744032300000,
+        "updated_at_ms": 1771755561795,
+        "closed_at_ms": 1771755561794,
+        "settled_at_ms": 1771755561795
+      },
+      "safety": {
+        "max_open_duration_ms": 0,
+        "expires_at_ms": 0,
+        "timeout_triggered": false
+      },
+      "settlement_outcome": "HIGHER"
+    },
+    {
+      "market_id": "mkt_stocks_GOOGL_5",
+      "sport": "Stocks",
+      "session_id": "stocks-session-2026-02-22",
+      "market_type": "binary_higher_lower",
+      "question": "Will GOOGL move DOWN another 0.71% from $141.44 by the open settlement window?",
+      "context": {
+        "scanner_event": "event_created",
+        "scanner_event_type": "preopen_volatility",
+        "scanner_event_state": "active",
+        "original_close_at_ms": 1744032660000,
+        "close_time_shifted_to_now": true,
+        "source_event_id": "5",
+        "source_signal_type": "create_bet",
+        "scanner_session_id": "stocks-session-2026-02-22",
+        "scanner_confidence": 1,
+        "scanner_cooldown_key": "stocks:GOOGL:mkt_stocks_GOOGL_5",
+        "market_key": "preopen_volatility",
+        "symbol": "GOOGL",
+        "close_at_ms": 1771755611390,
+        "underlying_last_price": 141.44,
+        "underlying_start_price": 141.44,
+        "underlying_price_at_ms": 1744032300000,
+        "close_reason": "settlement_window_elapsed"
+      },
+      "open_at_ms": 1744032300000,
+      "settlement_key": "stocks_stock_up_down_window",
+      "starter_event_id": "5",
+      "close_control": {
+        "mode": "backend_signal",
+        "closer_key": "mock_closer_v1"
+      },
+      "market_making": {
+        "model": "binary_amm",
+        "initial_probability_yes": 0.5,
+        "virtual_liquidity": 120,
+        "fee_bps": 120
+      },
+      "status": "settled",
+      "amm_state": {
+        "yes_pool": 69.88,
+        "no_pool": 60,
+        "fee_bps": 120,
+        "virtual_liquidity": 120,
+        "total_fees_collected": 0.12,
+        "total_volume": 10,
+        "trade_count": 1
+      },
+      "prices": {
+        "yes": 0.5380351093316907,
+        "no": 0.4619648906683092
+      },
+      "timestamps": {
+        "open_at_ms": 1744032300000,
+        "updated_at_ms": 1771755561799,
+        "closed_at_ms": 1771755561798,
+        "settled_at_ms": 1771755561799
+      },
+      "safety": {
+        "max_open_duration_ms": 0,
+        "expires_at_ms": 0,
+        "timeout_triggered": false
+      },
+      "settlement_outcome": "HIGHER"
+    }
+  ]
+}
