@@ -1,0 +1,16 @@
+{
+  "name": "moment-mvp",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.6.2",
+  "scripts": {
+    "setup": "pnpm --dir apps/api install --lockfile=false && pnpm --dir apps/mobile install --lockfile=false",
+    "ensure:api": "sh -c '[ -d apps/api/node_modules/stripe ] || pnpm --dir apps/api install --lockfile=false'",
+    "ensure:mobile": "sh -c '[ -d apps/mobile/node_modules/@stripe/stripe-react-native ] || pnpm --dir apps/mobile install --lockfile=false'",
+    "dev": "sh -c 'pnpm dev:api & pnpm dev:mobile; wait'",
+    "dev:api": "pnpm run ensure:api && pnpm --dir apps/api dev",
+    "dev:mobile": "pnpm run ensure:mobile && pnpm --dir apps/mobile dev",
+    "agent": "sh -c 'VIDEO=\"$(pwd)/clips/safety_car.mov\"; (open -a \"QuickTime Player\" \"$VIDEO\" >/dev/null 2>&1 || open \"$VIDEO\" >/dev/null 2>&1); sleep 0.4; osascript -e \"tell application \\\"QuickTime Player\\\" to if exists front document then play front document\" >/dev/null 2>&1 || true; apps/vision-agent/.venv/bin/python -u apps/vision-agent/run_agent.py --source \"$VIDEO\" --session-id realtime_live_with_video --api-base-url http://127.0.0.1:4000 --sample-fps 2 --realtime-file --playback-rate 1.0'",
+    "scanner:events": "sh -c 'apps/trading/.venv/bin/python -u apps/trading/scanner_events.py \"$@\"' scanner_events"
+  }
+}
